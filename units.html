@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNITS</title>
+    <style>
+        
+        body{
+            margin: 0;
+            box-sizing: border-box;
+        }
+    .box-px{
+        width: 200px;
+        height: 100px;
+        background-color:lightcoral;
+    }
+    .parent-percent{
+        width: 300px;
+        height: 300px;
+        background-color: lightgray;
+    }
+    .child-percent{
+        width: 50%;
+        height: 100%;
+        background-color: gray;
+    }
+    html{
+        font-size: 18px;
+    }
+    .rem-paragraph{
+        font-size: 2rem;
+    }
+    .parent-em{
+       background-color:lightsalmon; 
+       font-size: 16px;
+    }
+    .child-em{
+        font-size: 1.5em;
+    }
+    .box-vw{
+        width: 50vw;
+        height: 100px;
+        background-color: lightcyan;
+    }
+    .box-vh{
+       
+        height:25vh;
+        background-color:lightpink;
+    }
+    .square-vmin{
+        width: 20vmin;
+        height: 20vmin;
+        background-color: lightsteelblue;
+    }
+    .square-vmax{
+        width: 20vmax;
+        height: 20vmax;
+        background-color:lightseagreen;
+    }
+    .parent-relative{
+        position: relative;
+        width: 300px;
+        height: 300px;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    .child-absolute{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color:lightgrey;
+       
+    }
+    .parent-font{
+        font-size: 20px;
+    }
+    .child-font{
+        font-size: inherit;
+    }
+    </style>
+</head>
+<body>
+   <center> task 1</center>
+<div class="box-px">Box with px units</div>
+<br>
+<center> task 2</center>
+<div class="parent-percent">
+    <div class="child-percent">Box with % units</div>
+</div>
+<center>task 3</center>
+<p class="rem-paragraph">This paragraph uses rem units.</p>
+<center>task 4</center>
+<div class="parent-em">
+    <p class="child-em">This paragraph uses em units.</p>
+</div>
+<center>task 5</center>
+<div class="box-vw">Box with vw units</div>
+<center>task 6</center>
+<div class="box-vh">Box with vh units</div>
+<center>task 7</center>
+<div class="square-vmin">Square with vmin units</div>
+<center>task8</center>
+<div class="square-vmax">Square with vmax units</div>
+<center>task 9</center>
+<div class="parent-relative">
+    <div class="child-absolute">Child Box</div>
+</div>
+<center>task 10</center>
+<div class="parent-font">
+    Parent Text
+    <div class="child-font">Child Text (Inherits Font Size)</div>
+</div>
+
+</body>
+</html>

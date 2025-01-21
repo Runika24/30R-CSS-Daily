@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .item1{
+         background-color: antiquewhite;
+         border-style: solid;
+         width: 300px;
+         height: 300px;
+        }
+       @media screen and (width >= 768px) and (width <= 1024px) {
+         .item1{
+             background-color: lightblue;
+         }
+         
+       }
+       .item2{
+        font-size: 16px;
+        background-color: bisque;
+       }
+       @media screen and (width >= 600px) and (width <=1200px){
+        .item2>p{
+            font-size: 18px;
+        }
+        
+       }
+       .item3{
+        width: 100%;
+    
+        padding: 5px;
+
+       }
+    .a{
+        background-color: lightcoral;
+        width: 200px;
+
+    }
+    .b{
+        background-color: lightgreen;
+        width: 200px;
+    }
+    .c{
+        background-color: lightslategray;
+        width: 200px;
+    }
+    .d{
+        background-color: lightskyblue;
+        width: 200px;
+    }
+       @media screen and (width >= 480px){
+       .item3{
+        display: flex;
+        justify-content: space-between;
+       }
+        
+       }
+       @media screen and (min-width : 500px) and (max-width : 800px) {
+        h1{
+           color:green; 
+            
+        }
+       }
+       .item5>img{
+        width: 400px;
+        height: 400px;
+
+       }
+       @media screen and (max-width : 400px) {
+        .item5{
+            display: none;
+        }
+        
+       }
+       .item6{
+        background-color: lightsalmon;
+        padding: 0;
+       }
+     @media screen and (min-width : 1024px){
+        .item6{
+            padding: 20px;
+        }
+        
+     }
+     header{
+        display: flex;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+     }
+     @media screen and (min-width : 600px) and (max-width : 1200px){
+        header{
+            background-color:grey;
+        }
+        
+     }
+     .item8>p{
+        font-size: 20px;
+     }
+     @media screen and (max-width : 480px){
+        .item8>p{
+            font-size: 16px;
+        }
+        
+     }
+     
+     .column1{
+        background-color: lightpink;
+     }
+     .column2{
+        background-color: lightgreen;
+     }
+    
+     @media screen and (min-width : 768px) and (max-width :1200px) {
+        .item9{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }  
+     }
+     .item10>img{
+        width: 400px;
+     }
+
+     @media screen and (max-width : 600px) {
+        .item10>img{
+            width: 100%;
+        }
+        
+     }
+     .item11>a{
+        color: red;
+     }
+     @media screen and (min-width : 700px) and (max-width : 1200px){
+        .item11>a{
+            color:blue;
+        }
+        
+     }
+    @media screen and (min-width : 500px) and (max-width : 800px){
+        .item12>h2{
+            font-size: 28px;
+        }
+        
+    }
+    .item13{
+        width: 200px;
+        height: 200px;
+        background-color: brown;
+    }
+    @media screen and (min-width : 1024px){
+        .item13{
+            border-style: solid;
+            border-color: black;
+        }
+        
+    }
+    .a1{
+        background-color:blue;
+        width: 300px;
+    }
+    .b1{
+        background-color: blueviolet;
+        width: 300px;
+    }
+    .c1{
+        background-color: bisque;
+        width: 300px;
+    }
+    @media screen and (min-width : 800px) and (max-width : 1200px){
+        .item14>.a1{
+            width: 250px;
+        }
+        .item14>.b1{
+            width: 250px;
+        }
+        .item14>.c1{
+            width: 250px;
+        }
+
+        
+    }
+    @media screen and (min-width : 600px) {
+        .item15{
+            display: flex;
+            gap: 20px;
+        }
+        
+    }
+         </style>
+</head>
+<body>
+ 
+     <center>task1</center>
+     <div class="item1"></div>
+     <center>task2</center>
+     <div class="item2">
+        <p>the font size of text inside a paragraph to `18px` when the viewport width is at least 600px but less than 1200px.  
+        </p>
+     </div>
+     
+     <center>task3</center>
+     <div class="item3">
+        <div class="a">item1</div>
+        <div class="b">item2</div>
+        <div class="c">item3</div>
+        <div class="d">item4</div>
+     </div>
+     <center>task4</center>
+     <div class="item4">
+       <h1>media_queries_task4</h1> 
+       <p>change the color of all elements to `green` when the viewport width is between 500px and 800px.  
+    </p>
+     </div>
+     <center>task5</center>
+     <div class="item5">
+        <img src="https://as1.ftcdn.net/v2/jpg/07/17/47/76/1000_F_717477674_I18XXnsukErgQyJytV3ebblWFvdP272o.jpg" alt="">
+     </div>
+     <center>task6</center>
+     <div class="item6">increases the padding of a container to `20px` when the viewport is at least 1024px wide.
+
+     </div>
+     <center>task7</center>
+     <header>
+        <div>home</div>
+        <div>about</div>
+        <div>where</div>
+     </header>
+     <center>task8</center>
+     <div class="item8">
+        <p>
+            Create a media query that sets the font size of all paragraphs to `16px` when the viewport width is smaller than 480px. 
+        </p>
+     </div>
+     <center>task9</center>
+     <div class="item9">
+        <div class="column1">column1</div>
+        <div class="column2">column2 </div>
+        
+     </div>
+
+     <center>task10</center>
+     <div class="item10">
+        <img src="https://imgcdn.stablediffusionweb.com/2024/9/17/d9c4e3ef-0c45-4713-86d7-37a790e0ca3c.jpg" alt="">
+     </div>
+     <center>task11</center>
+     <div class="item11">
+        <a href="link1">link1</a>
+        <a href="link2">link2</a>
+        <a href="link3">link3</a>
+       
+     </div>
+     <center>task12</center>
+     <div class="item12"></div>
+     <h2> modifies the `font-size` of all elements to `28px` when the viewport width is between 500px and 800px.</h2>
+     <center>task13</center>
+     <div class="item13">
+
+     </div>
+     <center>task14</center>
+     <div class="item14">
+        <div class="a1">item1</div>
+        <div class="b1">item2</div>
+        <div class="c1">item3</div>
+     </div>
+     <center>task15</center>
+     <center>WEBPAGE</center>
+     <div class="item15">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+     </div>
+     
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_updatedtask1</title>
+   <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+       .item1{
+        background-color:green;
+        grid-area: a;
+        border: 2px solid;
+       }
+       .item2{
+        background-color:green;
+        grid-area: b;
+        border: 2px solid;
+       }
+       .item3{
+        background-color:red;
+        grid-area: c;
+        border: 2px solid;
+       }
+       .item4{
+        background-color:yellow;
+        grid-area: d;
+        border: 2px solid;
+       }
+       .item5{
+        background-color: red;
+        grid-area: e;
+        border: 2px solid;
+       }
+       .item6{
+        background-color: green;
+        border: 2px solid;
+        grid-area: f;
+       }
+       .item7{
+        background-color: red;
+        grid-area: g;
+        border: 2px solid;
+       }
+       .item8{
+        background-color: yellow;
+        grid-area: h;
+        border: 2px solid;
+       }
+       .container{
+       gap: 8px;
+       display: grid;
+       width: 700px;
+       height: 700px; 
+       padding: 10px;
+       grid-template-columns: repeat(4,1fr);
+       grid-template-rows: repeat(3,1fr); 
+       grid-template-areas: 
+       'a b b c'
+       'a d e f'
+       'a g h f';
+       }
+       @media screen and ( max-width : 900px ){
+                .container{
+                    grid-template-columns: repeat(2,1fr);
+                    grid-template-areas: 
+                    'a b'
+                    'c d'
+                    'e f'; 
+                }
+             }   
+             @media screen and (max-width : 500px){
+            .container{
+                grid-template-columns: (1fr);
+                grid-template-areas: 
+                    'a'
+                    'b'
+                    'c'
+                    'd'
+                    'e'
+                    'f';
+                   
+            }
+            
+        }   
+        
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+        <div class="item item6"></div>
+        <div class="item item7"></div>
+        <div class="item item8"></div>
+    </div>
+</body>
+</html>
